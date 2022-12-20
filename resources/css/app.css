@@ -1,0 +1,14 @@
+@import url(https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900|roboto-slab:100,200,300,400,500,600,700,800,900);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .roboto-slab {
+        font-family: 'Roboto Slab', serif !important;
+    }
+}
