@@ -23,7 +23,7 @@ class WebsiteController extends Controller
 
     public function groups()
     {
-        return view('web.home');
+        return view('web.shepherd-groups');
     }
 
     public function sermonAudio()
