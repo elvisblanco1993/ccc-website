@@ -2,8 +2,8 @@
 @section('content')
 <header class="py-12 overflow-hidden">
     <div class="bg-gradient-to-tr from-slate-100 to-indigo-50 max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 rounded-xl">
-        <h1 class="roboto-slab md:text-left font-bold text-3xl md:text-4xl capitalize">Small Groups</h1>
-        <p class="mt-4 text-lg text-slate-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quos accusamus assumenda et vel unde sequi quo iste sint, deleniti dolorem ipsum recusandae mollitia quam est voluptate. Ea, impedit possimus?</p>
+        <h1 class="roboto-slab md:text-left font-bold text-3xl md:text-4xl capitalize">Discipleship and Shepherd Groups</h1>
+        <p class="mt-4 text-lg text-slate-800">Our community of followers and families gather regularly in homes throughout South Florida (Deut. 29:10-13; Jos. 8:35), as well as in men’s and women’s groups (Titus 2:3-8), to study the Bible, pray, fellowship and live the Christian life together.</p>
     </div>
 </header>
 

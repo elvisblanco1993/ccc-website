@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WebsiteController;
+use App\Http\Livewire\Event\Index as Events;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,4 +31,6 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('/events', Events::class)->name('events');
 });

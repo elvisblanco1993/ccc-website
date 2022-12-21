@@ -1,1 +1,1 @@
-{{-- Public Service Announcements --}}
+@livewire('event.banner')
