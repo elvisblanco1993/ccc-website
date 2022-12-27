@@ -1,14 +1,7 @@
 @extends('layouts.web')
 @section('content')
 {{-- Home page content goes here --}}
-<header class="relative flex items-center justify-center py-44 md:py-96 mb-12 overflow-hidden">
-    <div class="absolute h-full w-full z-30 p-5 text-slate-900 bg-white bg-opacity-60 backdrop-blur-sm flex items-center justify-center">
-        <h1 class="text-4xl md:text-8xl font-extrabold roboto-slab">Christ Community Church</h1>
-    </div>
-    <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-crucifix-on-a-cliff-in-the-sea-landscape-14459-large.mp4" type="video/mp4" />Your browser does not support the video tag.
-    </video>
-</header>
+@include('web.partials.header')
 
 <div class="py-12 md:py-24"></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
