@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Livewire\Event\Index as Events;
+use App\Http\Livewire\Article\Index as Articles;
+use App\Http\Livewire\Article\Create as NewArticle;
+use App\Http\Livewire\Article\Edit as EditArticle;
+use App\Http\Livewire\Menu\Index as MenuSettings;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,8 +30,6 @@ Route::get('/contact-us', [WebsiteController::class, 'contact'])->name('contact'
 Route::get('/events/list', [WebsiteController::class, 'events'])->name('events.list');
 Route::get('/events/{event}', [WebsiteController::class, 'singleEvent'])->name('event.show');
 
-
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -37,5 +39,16 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 
-    Route::get('/events', Events::class)->name('events');
+    Route::prefix('admin')->group(function() {
+        Route::get('/events', Events::class)->name('admin.events');
+
+        // Menus
+        Route::get('/nva-menu-settings', MenuSettings::class)->name('admin.menu');
+
+        // Articles
+        Route::get('/articles', Articles::class)->name('admin.articles');
+        Route::get('/articles/new', NewArticle::class)->name('admin.article.create');
+        Route::get('/articles/{article}/edit', EditArticle::class)->name('admin.article.edit');
+
+    });
 });

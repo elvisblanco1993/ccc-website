@@ -1,6 +1,6 @@
 <div>
     <div class="relative w-full aspect-[8/6] lg:aspect-[16/7]" id="slider">
-        <div class="absolute slide z-50 opacity-100 w-full aspect-[8/6] lg:aspect-[16/7] bg-no-repeat bg-cover bg-center ease-in-out transition-delay-75 duration-1000 transition-all bg-[url('https://images.unsplash.com/photo-1672009086469-84b66e14b9b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80')]">
+        <div class="absolute slide z-10 opacity-100 w-full aspect-[8/6] lg:aspect-[16/7] bg-no-repeat bg-cover bg-center ease-in-out transition-delay-75 duration-1000 transition-all bg-[url('https://images.unsplash.com/photo-1672009086469-84b66e14b9b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80')]">
             <div class="h-full flex items-center justify-center max-w-7xl mx-auto text-left px-4 sm:px-6 lg:px-8">
                 <div>
                     <h1 class="text-2xl md:text-5xl lg:text-6xl font-black text-[#fefefc]" style="text-shadow: 1px 1px #0f1955">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
@@ -76,8 +76,8 @@
         }, 10000);
 
         function nextSlide(){
-            let activeSlide = document.querySelector('.slide.z-50.opacity-100');
-            activeSlide.classList.remove('z-50');
+            let activeSlide = document.querySelector('.slide.z-10.opacity-100');
+            activeSlide.classList.remove('z-10');
             activeSlide.classList.remove('opacity-100');
             activeSlide.classList.add('z-0');
             activeSlide.classList.add('opacity-0');
@@ -88,13 +88,13 @@
             }
             nextSlide.classList.remove('z-0');
             nextSlide.classList.remove('opacity-0');
-            nextSlide.classList.add('z-50');
+            nextSlide.classList.add('z-10');
             nextSlide.classList.add('opacity-100');
         }
 
         function previousSlide(){
-            let activeSlide = document.querySelector('.slide.z-50.opacity-100');
-            activeSlide.classList.remove('z-50');
+            let activeSlide = document.querySelector('.slide.z-10.opacity-100');
+            activeSlide.classList.remove('z-10');
             activeSlide.classList.remove('opacity-100');
             activeSlide.classList.add('z-0');
             activeSlide.classList.add('opacity-0');
@@ -105,7 +105,7 @@
             }
             previousSlide.classList.remove('z-0');
             previousSlide.classList.remove('opacity-0');
-            previousSlide.classList.add('z-50');
+            previousSlide.classList.add('z-10');
             previousSlide.classList.add('opacity-100');
         }
 

@@ -15,8 +15,14 @@
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('events') }}" :active="request()->routeIs('events')">
+                    <x-jet-nav-link href="{{ route('admin.events') }}" :active="request()->routeIs('admin.events')">
                         {{ __('Events') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('admin.articles') }}" :active="request()->routeIs('admin.articles')">
+                        {{ __('Articles') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('admin.menu') }}" :active="request()->routeIs('admin.menu')">
+                        {{ __('Menu') }}
                     </x-jet-nav-link>
                 </div>
             </div>
@@ -142,6 +148,15 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('admin.events') }}" :active="request()->routeIs('admin.events')">
+                {{ __('Events') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('admin.articles') }}" :active="request()->routeIs('admin.articles')">
+                {{ __('Articles') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('admin.menu') }}" :active="request()->routeIs('admin.menu')">
+                {{ __('Menu') }}
             </x-jet-responsive-nav-link>
         </div>
 

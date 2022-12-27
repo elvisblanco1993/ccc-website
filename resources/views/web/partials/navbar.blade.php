@@ -1,20 +1,95 @@
-<nav class="z-50 h-20 md:h-24 w-full flex items-center bg-white/80 backdrop-blur-md">
-    <div class="flex items-center justify-between px-4 sm:px-6 lg:px-8 w-full xl:max-w-7xl mx-auto">
+<nav class="z-50 h-20 md:h-24 w-full flex items-center bg-white">
+    <div class="flex items-center justify-between px-4 sm:px-6 lg:px-8 w-full mx-auto">
         {{-- Left side --}}
-        <a href="{{ route('home') }}">
+        <a href="{{ route('home') }}" class="flex items-center space-x-3">
             <img src="{{ asset('HRCCClogo.png') }}" alt="Christ Community Church" class="h-16 md:h-20">
+            <div class="text-ccc">
+                <h1 class="roboto-slab text-3xl font-bold">Christ Community Church</h1>
+                <p class="text-ccc/90 font-medium">{{ __("Loving God, Loving People") }}</p>
+            </div>
         </a>
 
         {{-- Right side --}}
-        <div class="hidden md:flex items-center gap-1 text-sm font-medium text-slate-800 capitalize">
-            <a href="{{ route('bible') }}" class="inline-block px-3 py-1.5 rounded-md hover:bg-white hover:text-indigo-600">{{ __("bible") }}</a>
-            <a href="{{ route('knowing-god') }}" class="inline-block px-3 py-1.5 rounded-md hover:bg-white hover:text-indigo-600">{{ __("knowing god") }}</a>
-            <a href="{{ route('groups') }}" class="inline-block px-3 py-1.5 rounded-md hover:bg-white hover:text-indigo-600">{{ __("small groups") }}</a>
-            <a href="" class="inline-block px-3 py-1.5 rounded-md hover:bg-white hover:text-indigo-600">{{ __("pastor's blog") }}</a>
-            <a href="" class="inline-block px-3 py-1.5 rounded-md hover:bg-white hover:text-indigo-600">{{ __("sermon audio") }}</a>
-            <a href="{{ route('about') }}" class="inline-block px-3 py-1.5 rounded-md hover:bg-white hover:text-indigo-600">{{ __("about us") }}</a>
-            <a href="{{ route('contact') }}" class="inline-block px-3 py-1.5 rounded-md hover:bg-white hover:text-indigo-600">{{ __("contact us") }}</a>
-            <a href="" class="inline-block px-3 py-1.5 rounded-md hover:bg-white hover:text-indigo-600">{{ __("give") }}</a>
+        <div class="hidden md:flex items-center gap-1 text-sm font-medium text-slate-800 uppercase">
+            {{-- Church 101 --}}
+            <x-jet-dropdown>
+                <x-slot name="trigger">
+                    <button type="button" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all uppercase">
+                        {{ __("Church 101") }}
+                    </button>
+                </x-slot>
+                <x-slot name="content" class="w-56">
+                    <x-jet-dropdown-link href="">
+                        {{ __('A healthy church') }}
+                    </x-jet-dropdown-link>
+                    <x-jet-dropdown-link href="">
+                        {{ __('Church preparation') }}
+                    </x-jet-dropdown-link>
+                </x-slot>
+            </x-jet-dropdown>
+            {{-- End | Church 101 --}}
+            {{-- Bible --}}
+            <x-jet-dropdown>
+                <x-slot name="trigger">
+                    <button type="button" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all uppercase">
+                        {{ __("Bible") }}
+                    </button>
+                </x-slot>
+                <x-slot name="content">
+                    <x-jet-dropdown-link href="">
+                        {{ __('CCC Bible Reading Plan') }}
+                    </x-jet-dropdown-link>
+                    <x-jet-dropdown-link href="">
+                        {{ __('How to study the Bible') }}
+                    </x-jet-dropdown-link>
+                </x-slot>
+            </x-jet-dropdown>
+            {{-- End | Bible --}}
+            {{-- Knowing God --}}
+            <x-jet-dropdown>
+                <x-slot name="trigger">
+                    <button type="button" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all uppercase">
+                        {{ __("Knowing God") }}
+                    </button>
+                </x-slot>
+                <x-slot name="content">
+                    <x-jet-dropdown-link href="">
+                        {{ __('Why believe the Bible?') }}
+                    </x-jet-dropdown-link>
+                    <x-jet-dropdown-link href="">
+                        {{ __('Answers in Genesis') }}
+                    </x-jet-dropdown-link>
+                    <x-jet-dropdown-link href="">
+                        {{ __('Four roads to God') }}
+                    </x-jet-dropdown-link>
+                </x-slot>
+            </x-jet-dropdown>
+            {{-- End | Knowing God --}}
+            <a href="{{ route('groups') }}" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all">{{ __("small groups") }}</a>
+            <a href="" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all">{{ __("pastor's blog") }}</a>
+            <a href="" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all">{{ __("sermon audio") }}</a>
+            {{-- About Us --}}
+            <x-jet-dropdown>
+                <x-slot name="trigger">
+                    <button type="button" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all uppercase">
+                        {{ __("About Us") }}
+                    </button>
+                </x-slot>
+                <x-slot name="content">
+                    <x-jet-dropdown-link href="">
+                        {{ __('Who are we') }}
+                    </x-jet-dropdown-link>
+                    <x-jet-dropdown-link href="">
+                        {{ __('Statement of Faith') }}
+                    </x-jet-dropdown-link>
+                    <x-jet-dropdown-link href="">
+                        {{ __('Missions we support') }}
+                    </x-jet-dropdown-link>
+                </x-slot>
+            </x-jet-dropdown>
+            {{-- End | About Us --}}
+            <a href="{{ route('contact') }}" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all">{{ __("contact us") }}</a>
+            <a href="" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all">{{ __("give") }}</a>
         </div>
     </div>
 </nav>
