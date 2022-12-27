@@ -23,6 +23,11 @@ Route::get('/sermon-audio', [WebsiteController::class, 'sermonAudio'])->name('se
 Route::get('/about-ccc', [WebsiteController::class, 'about'])->name('about');
 Route::get('/contact-us', [WebsiteController::class, 'contact'])->name('contact');
 
+Route::get('/events/list', [WebsiteController::class, 'events'])->name('events.list');
+Route::get('/events/{event}', [WebsiteController::class, 'singleEvent'])->name('event.show');
+
+
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

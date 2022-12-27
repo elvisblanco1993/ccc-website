@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 class WebsiteController extends Controller
@@ -37,6 +38,16 @@ class WebsiteController extends Controller
     }
 
     public function contact()
+    {
+        return view('web.home');
+    }
+
+    public function events()
+    {
+        return view('web.home');
+    }
+
+    public function singleEvent(Event $event)
     {
         return view('web.home');
     }

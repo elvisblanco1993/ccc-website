@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Event;
 
 use App\Models\Event;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -43,10 +44,10 @@ class Create extends Component
                 'name' => $this->name,
                 'description' => $this->description,
                 'banner' => $banner,
-                'date' => $this->date,
+                'date' => Carbon::parse($this->date)->toDateTime(),
                 'address' => $this->address,
-                'display_alert_from' => $this->display_alert_from,
-                'display_alert_to' => $this->display_alert_to,
+                'display_alert_from' => Carbon::parse($this->display_alert_from)->toDateTime(),
+                'display_alert_to' => Carbon::parse($this->display_alert_to)->toDateTime(),
             ]);
             session()->flash('flash.banner', 'Event saved!');
             session()->flash('flash.bannerStyle', 'success');
@@ -55,7 +56,6 @@ class Create extends Component
             session()->flash('flash.banner', $th->getMessage());
             session()->flash('flash.bannerStyle', 'danger');
         }
-
         return redirect()->route('events');
     }
 }

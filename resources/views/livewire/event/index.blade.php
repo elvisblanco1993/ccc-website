@@ -38,12 +38,12 @@
                                         <span class="text-xs border border-slate-200 rounded uppercase px-3 py-1 bg-slate-100 text-slate-600">No</span>
                                     @endif
                                 </td>
-                                <td class="py-4 px-6 text-right">
-                                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+                                <td class="py-4 px-6 flex items-center justify-end space-x-3">
+                                    @livewire('event.edit', ['event' => $event], key('edit-'.$event->id))
+                                    @livewire('event.delete', ['event' => $event], key('delete-'.$event->id))
                                 </td>
                             </tr>
                         @empty
-
                         @endforelse
                     </tbody>
                 </table>
