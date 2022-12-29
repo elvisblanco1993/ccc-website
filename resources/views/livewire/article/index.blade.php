@@ -43,7 +43,7 @@
                                     @if (!$article->trashed())
                                         <a href="{{ route('admin.article.edit', ['article' => $article->id]) }}" class="py-4 font-medium text-blue-600 dark:text-blue-500 hover:underline">{{ __("Edit") }}</a>
                                     @endif
-                                    @livewire('article.delete', ['article' => $article], key('delete-'.$article->id))
+                                    @livewire('article.delete', ['article' => $article], key('del-'.$article->id))
                                 </td>
                             </tr>
                         @empty

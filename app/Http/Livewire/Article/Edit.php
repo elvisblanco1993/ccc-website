@@ -48,7 +48,7 @@ class Edit extends Component
             session()->flash('flash.banner', $th->getMessage());
             session()->flash('flash.bannerStyle', 'danger');
         }
-        return redirect()->route('admin.articles.edit', ['article' => $this->article->id]);
+        return redirect()->route('admin.article.edit', ['article' => $this->article->id]);
     }
 
     public function render()
