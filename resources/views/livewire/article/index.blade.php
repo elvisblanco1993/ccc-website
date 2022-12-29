@@ -16,9 +16,8 @@
                 <table class="w-full text-sm text-left text-gray-500">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50">
                         <tr>
-                            <th scope="col" class="py-3 px-6">{{ __("Date") }}</th>
-                            <th scope="col" class="py-3 px-6">{{ __("article name") }}</th>
-                            <th scope="col" class="py-3 px-6">{{ __("Showing on banner") }}</th>
+                            <th scope="col" class="py-3 px-6">{{ __("Article title") }}</th>
+                            <th scope="col" class="py-3 px-6">{{ __("Status") }}</th>
                             <th scope="col" class="py-3 px-6">
                                 <span class="sr-only">Edit</span>
                             </th>
@@ -27,21 +26,23 @@
                     <tbody>
                         @forelse ($articles as $article)
                             <tr class="bg-white border-b hover:bg-gray-50">
-                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
-                                    {{ Carbon\Carbon::parse($article->date)->format('M d, Y \a\t H:i a') }}
-                                </th>
                                 <td class="py-4 px-6">
-                                    {{ $article->name }}
+                                    <p>{{ $article->title }}</p>
+                                    <span>{{ route('article.show', ['slug' => $article->slug]) }}</span>
                                 </td>
                                 <td class="py-4 px-6">
-                                    @if (Carbon\Carbon::now()->gte($article->display_alert_from) && Carbon\Carbon::now()->lte($article->display_alert_to))
-                                        <span class="text-xs border border-green-200 rounded uppercase px-3 py-1 bg-green-100 text-green-600">Yes</span>
+                                    @if ($article->published_at)
+                                        <span class="text-xs border border-green-200 rounded uppercase px-3 py-1 bg-green-100 text-green-600">
+                                            {{ Carbon\Carbon::parse($article->published_at)->format('M d, Y') }}
+                                        </span>
                                     @else
-                                        <span class="text-xs border border-slate-200 rounded uppercase px-3 py-1 bg-slate-100 text-slate-600">No</span>
+                                        <span class="text-xs font-semibold border border-slate-200 rounded uppercase px-3 py-1 bg-slate-100 text-slate-600">Draft</span>
                                     @endif
                                 </td>
                                 <td class="py-4 px-6 flex items-center justify-end space-x-3">
-                                    @livewire('article.edit', ['article' => $article], key('edit-'.$article->id))
+                                    @if (!$article->trashed())
+                                        <a href="{{ route('admin.article.edit', ['article' => $article->id]) }}" class="py-4 font-medium text-blue-600 dark:text-blue-500 hover:underline">{{ __("Edit") }}</a>
+                                    @endif
                                     @livewire('article.delete', ['article' => $article], key('delete-'.$article->id))
                                 </td>
                             </tr>

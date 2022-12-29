@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\Event;
 use Illuminate\Http\Request;
 
@@ -50,5 +51,11 @@ class WebsiteController extends Controller
     public function singleEvent(Event $event)
     {
         return view('web.home');
+    }
+
+    public function showArticle($slug)
+    {
+        $article = Article::where('slug', $slug)->firstOrFail();
+        dump($article);
     }
 }

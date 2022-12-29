@@ -18,6 +18,7 @@ class Article extends Model
         'excerpt',
         'banner',
         'published_at',
+        'comments',
     ];
 
 }

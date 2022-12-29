@@ -21,6 +21,7 @@ return new class extends Migration
             $table->longText('excerpt')->nullable();
             $table->string('banner')->nullable();
             $table->timestamp('published_at')->nullable();
+            $table->boolean('comments')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

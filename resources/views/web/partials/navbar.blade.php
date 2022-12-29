@@ -4,17 +4,17 @@
         <a href="{{ route('home') }}" class="flex items-center space-x-3">
             <img src="{{ asset('HRCCClogo.png') }}" alt="Christ Community Church" class="h-16 md:h-20">
             <div class="text-ccc">
-                <h1 class="roboto-slab text-3xl font-bold">Christ Community Church</h1>
-                <p class="text-ccc/90 font-medium">{{ __("Loving God, Loving People") }}</p>
+                <h1 class="roboto-slab lg:text-2xl font-bold">Christ Community Church</h1>
+                <p class="text-ccc/90 text-sm lg:text-base font-medium">{{ __("Loving God, Loving People") }}</p>
             </div>
         </a>
 
         {{-- Right side --}}
-        <div class="hidden md:flex items-center gap-1 text-sm font-medium text-slate-800 uppercase">
+        <div class="hidden lg:flex items-center space-x-4 text-xs lg:text-sm font-medium text-slate-800 uppercase">
             {{-- Church 101 --}}
             <x-jet-dropdown>
                 <x-slot name="trigger">
-                    <button type="button" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all uppercase">
+                    <button type="button" class="inline-block hover:text-indigo-600 transition-all uppercase">
                         {{ __("Church 101") }}
                     </button>
                 </x-slot>
@@ -31,7 +31,7 @@
             {{-- Bible --}}
             <x-jet-dropdown>
                 <x-slot name="trigger">
-                    <button type="button" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all uppercase">
+                    <button type="button" class="inline-block hover:text-indigo-600 transition-all uppercase">
                         {{ __("Bible") }}
                     </button>
                 </x-slot>
@@ -48,7 +48,7 @@
             {{-- Knowing God --}}
             <x-jet-dropdown>
                 <x-slot name="trigger">
-                    <button type="button" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all uppercase">
+                    <button type="button" class="inline-block hover:text-indigo-600 transition-all uppercase">
                         {{ __("Knowing God") }}
                     </button>
                 </x-slot>
@@ -65,13 +65,13 @@
                 </x-slot>
             </x-jet-dropdown>
             {{-- End | Knowing God --}}
-            <a href="{{ route('groups') }}" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all">{{ __("small groups") }}</a>
-            <a href="" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all">{{ __("pastor's blog") }}</a>
-            <a href="" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all">{{ __("sermon audio") }}</a>
+            <a href="{{ route('groups') }}" class="inline-block hover:text-indigo-600 transition-all">{{ __("small groups") }}</a>
+            <a href="" class="inline-block hover:text-indigo-600 transition-all">{{ __("pastor's blog") }}</a>
+            <a href="" class="inline-block hover:text-indigo-600 transition-all">{{ __("sermon audio") }}</a>
             {{-- About Us --}}
             <x-jet-dropdown>
                 <x-slot name="trigger">
-                    <button type="button" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all uppercase">
+                    <button type="button" class="inline-block hover:text-indigo-600 transition-all uppercase">
                         {{ __("About Us") }}
                     </button>
                 </x-slot>
@@ -83,13 +83,13 @@
                         {{ __('Statement of Faith') }}
                     </x-jet-dropdown-link>
                     <x-jet-dropdown-link href="">
-                        {{ __('Missions we support') }}
+                        {{ __('Missions partners') }}
                     </x-jet-dropdown-link>
                 </x-slot>
             </x-jet-dropdown>
             {{-- End | About Us --}}
-            <a href="{{ route('contact') }}" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all">{{ __("contact us") }}</a>
-            <a href="" class="inline-block px-3 py-1.5 rounded-md hover:bg-indigo-50 hover:text-indigo-600 transition-all">{{ __("give") }}</a>
+            <a href="{{ route('contact') }}" class="inline-block hover:text-indigo-600 transition-all">{{ __("contact us") }}</a>
+            <a href="" class="inline-block hover:text-indigo-600 transition-all">{{ __("give") }}</a>
         </div>
     </div>
 </nav>

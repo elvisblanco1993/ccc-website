@@ -27,6 +27,8 @@ Route::get('/sermon-audio', [WebsiteController::class, 'sermonAudio'])->name('se
 Route::get('/about-ccc', [WebsiteController::class, 'about'])->name('about');
 Route::get('/contact-us', [WebsiteController::class, 'contact'])->name('contact');
 
+Route::get('/{slug}', [WebsiteController::class, 'showArticle'])->name('article.show');
+
 Route::get('/events/list', [WebsiteController::class, 'events'])->name('events.list');
 Route::get('/events/{event}', [WebsiteController::class, 'singleEvent'])->name('event.show');
 
@@ -35,15 +37,15 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
 
     Route::prefix('admin')->group(function() {
+        Route::get('/dashboard', function () {
+            return view('dashboard');
+        })->name('dashboard');
         Route::get('/events', Events::class)->name('admin.events');
 
         // Menus
-        Route::get('/nva-menu-settings', MenuSettings::class)->name('admin.menu');
+        Route::get('/nav-menu-settings', MenuSettings::class)->name('admin.menu');
 
         // Articles
         Route::get('/articles', Articles::class)->name('admin.articles');

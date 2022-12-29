@@ -5,7 +5,7 @@
                 <div>
                     <h1 class="text-2xl md:text-5xl lg:text-6xl font-black text-[#fefefc]" style="text-shadow: 1px 1px #0f1955">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                     <p class="hidden md:block mt-6 text-xl font-medium text-[#fefefc]" style="text-shadow: 1px 1px #0f1955">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis qui eligendi assumenda, similique odio animi debitis minus dignissimos consectetur reiciendis quis asperiores nam veniam ab impedit laudantium porro! Fugiat, nesciunt?</p>
-                    <a href="" class="mt-6 inline-flex font-medium uppercase text-[#fefefc] bg-ccc px-6 py-2.5 rounded-lg items-center space-x-2 group">
+                    <a href="" class="mt-6 inline-flex text-sm font-medium uppercase text-[#fefefc] bg-ccc px-6 py-2.5 rounded-lg items-center space-x-2 group">
                         <span>Button text</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 group-hover:translate-x-1 transition-all">
                             <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
