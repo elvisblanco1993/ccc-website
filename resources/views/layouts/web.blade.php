@@ -11,7 +11,7 @@
     </head>
     <body class="text-gray-900 antialiased">
         @include('web.partials.psa')
-        @include('web.partials.navbar')
+        @include('web.partials.navbar', ['topLevelMenuItems' => $topLevelMenuItems])
         @yield('content')
         @include('web.partials.footer')
     </body>
