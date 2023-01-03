@@ -24,6 +24,9 @@
                     <x-jet-nav-link href="{{ route('admin.menu') }}" :active="request()->routeIs('admin.menu')">
                         {{ __('Menu') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('admin.slides') }}" :active="request()->routeIs('admin.slides')">
+                        {{ __('Slides') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 
@@ -157,6 +160,9 @@
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('admin.menu') }}" :active="request()->routeIs('admin.menu')">
                 {{ __('Menu') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('admin.slides') }}" :active="request()->routeIs('admin.slides')">
+                {{ __('Slides') }}
             </x-jet-responsive-nav-link>
         </div>
 

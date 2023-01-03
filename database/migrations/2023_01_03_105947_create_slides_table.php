@@ -15,6 +15,14 @@ return new class extends Migration
     {
         Schema::create('slides', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('bg_image');
+            $table->string('content')->nullable();
+            $table->string('btn_label')->nullable();
+            $table->string('btn_link')->nullable();
+            $table->timestamp('start_at')->nullable();
+            $table->timestamp('end_at')->nullable();
+            $table->boolean('is_enabled')->default(0);
             $table->timestamps();
         });
     }
