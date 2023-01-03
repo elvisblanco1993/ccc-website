@@ -4,6 +4,8 @@
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 {{ __('Menu Settings') }}
             </h2>
+
+            @livewire('menu.reorder')
         </div>
     </x-slot>
 

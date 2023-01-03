@@ -1,8 +1,8 @@
 <div>
     <div class="relative w-full aspect-[8/6] lg:aspect-[16/7]" id="slider">
         <div class="absolute slide z-10 opacity-100 w-full aspect-[8/6] lg:aspect-[16/7] bg-no-repeat bg-cover bg-center ease-in-out transition-delay-75 duration-1000 transition-all bg-[url('https://images.unsplash.com/photo-1672009086469-84b66e14b9b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80')]">
-            <div class="h-full flex items-center justify-center max-w-7xl mx-auto text-left px-4 sm:px-6 lg:px-8">
-                <div>
+            <div class="h-full flex items-center justify-center max-w-7xl mx-auto    text-left px-4 sm:px-6 lg:px-8">
+                <div class="w-full text-left">
                     <h1 class="text-2xl md:text-5xl lg:text-6xl font-black text-[#fefefc]" style="text-shadow: 1px 1px #0f1955">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                     <p class="hidden md:block mt-6 text-xl font-medium text-[#fefefc]" style="text-shadow: 1px 1px #0f1955">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis qui eligendi assumenda, similique odio animi debitis minus dignissimos consectetur reiciendis quis asperiores nam veniam ab impedit laudantium porro! Fugiat, nesciunt?</p>
                     <a href="" class="mt-6 inline-flex text-sm font-medium uppercase text-[#fefefc] bg-ccc px-6 py-2.5 rounded-lg items-center space-x-2 group">

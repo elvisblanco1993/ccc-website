@@ -13,7 +13,7 @@ class WebsiteController extends Controller
 
     public function __construct()
     {
-        $this->topLevelMenuItems = Menu::where('is_top_level', 1)->whereNull('parent_id')->get();
+        $this->topLevelMenuItems = Menu::where('is_top_level', 1)->whereNull('parent_id')->orderBy('order', 'ASC')->get();
     }
 
     public function home()

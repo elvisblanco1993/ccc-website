@@ -38,6 +38,7 @@ class Create extends Component
                 'is_dropdown' => $this->is_dropdown,
                 'btn_label' => $this->label,
                 'btn_link' => $this->link,
+                'order' => (Menu::where('is_top_level', 1)->whereNull('parent_id')->count() > 0) ? Menu::where('is_top_level', 1)->whereNull('parent_id')->count() + 1 : 1
             ]);
 
             session()->flash('flash.banner', 'Item successfully saved!');

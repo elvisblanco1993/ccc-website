@@ -15,6 +15,7 @@ class Menu extends Model
         'is_dropdown',
         'btn_label',
         'btn_link',
+        'order',
     ];
 
     public function children()
