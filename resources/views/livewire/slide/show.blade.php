@@ -1,10 +1,10 @@
 <div>
-    <div class="relative w-full aspect-[8/6] lg:aspect-[16/7]" id="slider">
+    <div class="relative w-full aspect-[8/6] lg:aspect-[16/9]" id="slider">
         @forelse ($slides as $slide)
             <div @class([
                 "slide z-10 opacity-100" => $loop->first,
                 "slide z-0 opacity-0" => !$loop->first,
-                "absolute w-full aspect-[8/6] lg:aspect-[16/7] bg-no-repeat bg-cover bg-center ease-in-out transition-delay-75 duration-1000 transition-all"
+                "absolute w-full aspect-[8/6] lg:aspect-[16/9] bg-no-repeat bg-cover bg-center ease-in-out transition-delay-75 duration-1000 transition-all"
             ]) style="background-image: url({{ asset($slide->bg_image) }})">
                 <div class="h-full flex items-center justify-center max-w-7xl mx-auto    text-left px-4 sm:px-6 lg:px-8">
                     <div class="w-full text-left">
