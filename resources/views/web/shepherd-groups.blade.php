@@ -13,32 +13,32 @@
     {{-- Group 1 --}}
     <div class="col-span-2 md:col-span-1">
         <h2 class="roboto-slab md:text-left font-bold text-3xl md:text-4xl uppercase">{!! __("Ladies Shepherd Group") !!}</h2>
-        <p class="mt-4 text-lg text-slate-800">{{ __("Our meetings of discipleship occur every three weeks, on Tuesday nights @ 7:00pm, scheduled monthly. Please reach out to us for more details about the next meeting at") }} <a target="_blank" class="underline" href="mailto:info@christcomchurch.org">info@christcomchurch.org</a></p>
+        <p class="mt-4 text-lg text-slate-800">{{ __("This discipleship meeting is open to guests and ladies 13 years of age and older on Tuesday nights @ 7 PM, focusing on fellowship, the Bible and related resources that are of relevance to Christian women today. For information on where and when the next meeting is scheduled, contact us at") }} <a target="_blank" class="underline" href="mailto:info@christcomchurch.org">info@christcomchurch.org</a></p>
     </div>
     <div class="col-span-2 md:col-span-1">
-        <img src="{{ asset('ladies-shepherd-group.jpeg') }}"
+        <img src="{{ asset('ladies-shepherd-group-blurred.jpeg') }}"
             alt=""
             class="w-full aspect-video md:aspect-[10/8] object-cover object-center rounded-2xl shadow">
     </div>
 
     {{-- Group 2 --}}
     <div class="col-span-2 md:col-span-1">
-        <img src="{{ asset('mens-shepherd-group.jpeg') }}"
+        <img src="{{ asset('mens-shepherd-group-blurred.jpeg') }}"
             alt=""
             class="w-full aspect-video md:aspect-[10/8] object-cover object-center rounded-2xl shadow">
     </div>
     <div class="col-span-2 md:col-span-1">
         <h2 class="roboto-slab md:text-left font-bold text-3xl md:text-4xl uppercase">{!! __("Men's Shepherd Group") !!}</h2>
-        <p class="mt-4 text-lg text-slate-800">{{ __("Our meetings of discipleship occur every three weeks, on Tuesday nights @ 7:00pm, scheduled monthly. Please reach out to us for more details about the next meeting at") }} <a target="_blank" class="underline" href="mailto:info@christcomchurch.org">info@christcomchurch.org</a></p>
+        <p class="mt-4 text-lg text-slate-800">{{ __("This discipleship meeting is open to guests and males 13 years of age and older on Tuesday nights @ 7 PM,  focusing on fellowship, the Bible and related resources that are of relevance to Christian men today. For information on where and when the next meeting is scheduled, contact us at") }} <a target="_blank" class="underline" href="mailto:info@christcomchurch.org">info@christcomchurch.org</a></p>
     </div>
 
     {{-- Group 3 --}}
     <div class="col-span-2 md:col-span-1">
-        <h2 class="roboto-slab md:text-left font-bold text-3xl md:text-4xl uppercase">{!! __("Family Worship") !!}</h2>
-        <p class="mt-4 text-lg text-slate-800">{{ __("Our family worship night occurs every three weeks, on Tuesday nights @ 7:00pm, scheduled monthly. Please reach out to us for more details about the next meeting at") }} <a target="_blank" class="underline" href="mailto:info@christcomchurch.org">info@christcomchurch.org</a></p>
+        <h2 class="roboto-slab md:text-left font-bold text-3xl md:text-4xl uppercase">{!! __("Family Worship Night") !!}</h2>
+        <p class="mt-4 text-lg text-slate-800">{{ __("This monthly discipleship meeting is open to guests and families (including children of all ages) on Tuesday nights @ 7 PM, focusing on fellowship and featuring a meal, worship music and family-friendly Bible teaching (e.g. The Westminster Confession of Faith and Catechism) and themes. For information on where and when the next meeting is scheduled, contact us at") }} <a target="_blank" class="underline" href="mailto:info@christcomchurch.org">info@christcomchurch.org</a></p>
     </div>
     <div class="col-span-2 md:col-span-1">
-        <img src="{{ asset('family-workship.jpeg') }}"
+        <img src="{{ asset('family-workship-blurred.jpeg') }}"
             alt=""
             class="w-full aspect-video md:aspect-[10/8] object-cover object-center rounded-2xl shadow">
     </div>
