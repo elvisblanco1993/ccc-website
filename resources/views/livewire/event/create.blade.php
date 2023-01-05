@@ -12,11 +12,16 @@
             <div class="mt-6">
                 <x-jet-label for="description" value="Description"/>
                 <textarea
-                    wire:model="description"
-                    cols="30"
-                    rows="6"
-                    class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm mt-1 w-full"
+                wire:model="description"
+                cols="30"
+                rows="6"
+                class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm mt-1 w-full"
                 ></textarea>
+            </div>
+            <div class="mt-6">
+                <x-jet-label for="rsvp" value="Reservation link (optional)"/>
+                <x-jet-input type="text" wire:model="rsvp" class="mt-1 w-full" placeholder="https://"/>
+                <x-jet-input-error for="rsvp"/>
             </div>
             <div class="mt-6">
                 <x-jet-label for="banner" value="Featured image"/>

@@ -60,8 +60,9 @@ class WebsiteController extends Controller
 
     public function singleEvent(Event $event)
     {
-        return view('web.home', [
-            'topLevelMenuItems' => $this->topLevelMenuItems
+        return view('web.event', [
+            'topLevelMenuItems' => $this->topLevelMenuItems,
+            'event' => $event
         ]);
     }
 

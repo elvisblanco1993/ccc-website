@@ -7,7 +7,7 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-2 gap-12 items-center">
         <div class="col-span-2 md:col-span-1">
-            <h2 class="roboto-slab md:text-left font-bold text-3xl md:text-4xl uppercase">{!! __("a simple church <br> with a simple message") !!}</h2>
+            <h2 class="roboto-slab md:text-left font-bold text-3xl md:text-3xl uppercase">{!! __("a simple church <br> with a simple message") !!}</h2>
             <p class="mt-4 text-lg text-slate-800">{{ __("If God is drawing you closer to Himself; if you're looking for a clear, direct, and Biblical presentation of truth and the gospel of Jesus Christ that brings life transformation and peace; Then, visit us to learn more and meet God.") }}</p>
             <p class="mt-4 text-lg text-slate-700">{{ __("Hear Biblical preaching and teaching, God glorifying worship, and participate in loving fellowship for the purpose of making us into Disciples of Jesus Christ for the Glory of God.") }}</p>
         </div>
@@ -20,7 +20,7 @@
     <div class="py-12 md:py-24"></div>
     {{-- Pastor message/video --}}
     <div>
-        <h2 class="roboto-slab text-left md:text-center font-bold text-3xl md:text-4xl uppercase">{{ __("a welcome message from pastor bernie diaz") }}</h2>
+        <h2 class="roboto-slab text-left md:text-center font-bold text-3xl md:text-3xl uppercase">{{ __("a welcome message from pastor bernie diaz") }}</h2>
         <video src="{{ asset('bernie_diaz_welcome.mp4') }}"
             autoplay
             muted
@@ -32,7 +32,7 @@
     {{-- Location --}}
     <div class="grid grid-cols-2 gap-12 items-center">
         <div class="col-span-2 md:col-span-1">
-            <h2 class="roboto-slab text-left font-bold text-3xl lg:text-4xl uppercase">{!! __("Join us every Sunday morning for our workship service.") !!}</h2>
+            <h2 class="roboto-slab text-left font-bold text-3xl uppercase">{!! __("Join us every Sunday morning for our workship service.") !!}</h2>
             <ul class="mt-6 text-lg text-slate-800">
                 <li class="flex items-top space-x-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 flex-none">

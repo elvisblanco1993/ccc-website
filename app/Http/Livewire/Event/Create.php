@@ -19,7 +19,8 @@ class Create extends Component
             $date,
             $address,
             $display_alert_from,
-            $display_alert_to;
+            $display_alert_to,
+            $rsvp;
 
     public function render()
     {
@@ -48,6 +49,7 @@ class Create extends Component
                 'address' => $this->address,
                 'display_alert_from' => Carbon::parse($this->display_alert_from)->toDateTime(),
                 'display_alert_to' => Carbon::parse($this->display_alert_to)->toDateTime(),
+                'rsvp' => $this->rsvp,
             ]);
             session()->flash('flash.banner', 'Event saved!');
             session()->flash('flash.bannerStyle', 'success');
@@ -56,6 +58,6 @@ class Create extends Component
             session()->flash('flash.banner', $th->getMessage());
             session()->flash('flash.bannerStyle', 'danger');
         }
-        return redirect()->route('events');
+        return redirect()->route('admin.events');
     }
 }

@@ -19,6 +19,11 @@
                     ></textarea>
                 </div>
                 <div class="mt-6">
+                    <x-jet-label for="rsvp" value="Reservation link (optional)"/>
+                    <x-jet-input type="text" wire:model="rsvp" class="mt-1 w-full" placeholder="https://"/>
+                    <x-jet-input-error for="rsvp"/>
+                </div>
+                <div class="mt-6">
                     <x-jet-label for="date" value="Event date (*)"/>
                     <x-jet-input type="datetime-local" wire:model="date" class="mt-1 w-full" required/>
                     <x-jet-input-error for="date"/>

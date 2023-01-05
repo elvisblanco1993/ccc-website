@@ -1,4 +1,4 @@
-<nav class="z-50 h-20 md:h-24 w-full flex items-center bg-white">
+<nav class="z-50 h-20 md:h-24 w-full flex items-center bg-white border-b border-b-slate-100">
     <div class="flex items-center justify-between px-4 sm:px-6 lg:px-8 w-full mx-auto">
         {{-- Left side --}}
         <a href="{{ route('home') }}" class="flex items-center space-x-3">

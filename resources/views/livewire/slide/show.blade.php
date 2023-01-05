@@ -1,10 +1,10 @@
 <div>
-    <div class="relative w-full aspect-[8/6] lg:aspect-[16/9]" id="slider">
+    <div class="relative w-full aspect-[8/6] lg:aspect-[16/9] xl:aspect-[16/7]" id="slider">
         @forelse ($slides as $slide)
             <div @class([
                 "slide z-10 opacity-100" => $loop->first,
                 "slide z-0 opacity-0" => !$loop->first,
-                "absolute w-full aspect-[8/6] lg:aspect-[16/9] bg-no-repeat bg-cover bg-center ease-in-out transition-delay-75 duration-1000 transition-all"
+                "absolute w-full aspect-[8/6] lg:aspect-[16/9] xl:aspect-[16/7] bg-no-repeat bg-cover bg-center ease-in-out transition-delay-75 duration-1000 transition-all"
             ]) style="background-image: url({{ asset($slide->bg_image) }})">
                 <div class="h-full flex items-center justify-center max-w-7xl mx-auto    text-left px-4 sm:px-6 lg:px-8">
                     <div class="w-full text-left">
@@ -15,11 +15,8 @@
                         @endif
 
                         @if ($slide->btn_label && $slide->btn_link)
-                            <a href="{{ $slide->btn_link }}" target="_blank" class="mt-6 inline-flex text-sm font-medium uppercase text-[#fefefc] bg-ccc px-6 py-2.5 rounded-lg items-center space-x-2 group">
+                            <a href="{{ $slide->btn_link }}" target="_blank" class="inline-block mt-6 px-5 py-3 bg-ccc hover:bg-ccc/90 transition text-white rounded-lg">
                                 <span>{{ $slide->btn_label }}</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 group-hover:translate-x-1 transition-all">
-                                    <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
-                                </svg>
                             </a>
                         @endif
                     </div>

@@ -17,5 +17,6 @@ class Event extends Model
         'address',
         'display_alert_from',
         'display_alert_to',
+        'rsvp'
     ];
 }
