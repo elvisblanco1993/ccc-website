@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Log;
 
 class Delete extends Component
 {
-    public $modal, $article;
+    public $modal, $destroyModal, $article;
 
     public function mount(Article $article)
     {
@@ -42,6 +42,21 @@ class Delete extends Component
         }
         return redirect()->route('admin.articles');
     }
+
+    public function destroy()
+    {
+        try {
+            $this->article->forceDelete();
+            session()->flash('flash.banner', 'Article successfully destroyed!');
+            session()->flash('flash.bannerStyle', 'success');
+        } catch (\Throwable $th) {
+            Log::error($th);
+            session()->flash('flash.banner', $th->getMessage());
+            session()->flash('flash.bannerStyle', 'danger');
+        }
+        return redirect()->route('admin.articles');
+    }
+
     public function render()
     {
         return view('livewire.article.delete');

@@ -8,6 +8,7 @@ use App\Http\Livewire\Article\Create as NewArticle;
 use App\Http\Livewire\Article\Edit as EditArticle;
 use App\Http\Livewire\Menu\Index as MenuSettings;
 use App\Http\Livewire\Slide\Index as Slides;
+use App\Http\Livewire\ReadingPlan\Index as ReadingPlans;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,5 +57,7 @@ Route::middleware([
         // Slides
         Route::get('/slides', Slides::class)->name('admin.slides');
 
+        // Reading Plans
+        Route::get('/reading-plans', ReadingPlans::class)->name('admin.readingPlans');
     });
 });
