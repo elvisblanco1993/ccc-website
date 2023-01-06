@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Event;
 use App\Models\Menu;
+use App\Models\ReadingPlan;
 use Illuminate\Http\Request;
 
 class WebsiteController extends Controller
@@ -20,6 +21,14 @@ class WebsiteController extends Controller
     {
         return view('web.home', [
             'topLevelMenuItems' => $this->topLevelMenuItems
+        ]);
+    }
+
+    public function bibleReadingPlan()
+    {
+        return view('web.bible-reading-plan', [
+            'topLevelMenuItems' => $this->topLevelMenuItems,
+            'plan' => ReadingPlan::whereDate('starts_at', '<=', now())->whereDate('ends_at', '>', now())->first()
         ]);
     }
 

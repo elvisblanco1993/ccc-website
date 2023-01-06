@@ -22,8 +22,7 @@ use App\Http\Livewire\ReadingPlan\Index as ReadingPlans;
 */
 
 Route::get('/', [WebsiteController::class, 'home'])->name('home');
-Route::get('/bible', [WebsiteController::class, 'bible'])->name('bible');
-Route::get('/knowing-god', [WebsiteController::class, 'knowingGod'])->name('knowing-god');
+Route::get('/bible-reading-plan', [WebsiteController::class, 'bibleReadingPlan'])->name('bible-reading-plan');
 Route::get('/groups', [WebsiteController::class, 'groups'])->name('groups');
 Route::get('/sermon-audio', [WebsiteController::class, 'sermonAudio'])->name('sermon.audio');
 Route::get('/about-ccc', [WebsiteController::class, 'about'])->name('about');
