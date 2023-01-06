@@ -1,0 +1,12 @@
+<x-mail::message>
+# Hi there!
+
+Someone just reached out through the CCC website. Please login to your account to see their message.
+
+<a href="{{ route('login') }}" class="inline-block text-indigo-600 my-2">
+Login to CCC
+</a>
+<br>
+Thanks,<br>
+{{ config('app.name') }}
+</x-mail::message>

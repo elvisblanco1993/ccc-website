@@ -30,6 +30,9 @@
                     <x-jet-nav-link href="{{ route('admin.readingPlans') }}" :active="request()->routeIs('admin.readingPlans')">
                         {{ __('Reading plans') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('admin.web-inquiries') }}" :active="request()->routeIs('admin.web-inquiries')">
+                        {{ __('Web inquiries') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 
@@ -169,6 +172,9 @@
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('admin.readingPlans') }}" :active="request()->routeIs('admin.readingPlans')">
                 {{ __('Reading plans') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('admin.web-inquiries') }}" :active="request()->routeIs('admin.web-inquiries')">
+                {{ __('Web inquiries') }}
             </x-jet-responsive-nav-link>
         </div>
 

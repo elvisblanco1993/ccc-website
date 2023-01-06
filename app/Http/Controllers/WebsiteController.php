@@ -55,7 +55,7 @@ class WebsiteController extends Controller
 
     public function contact()
     {
-        return view('web.home', [
+        return view('web.contact-us', [
             'topLevelMenuItems' => $this->topLevelMenuItems
         ]);
     }
