@@ -2,7 +2,7 @@
 
 @section('content')
     <header class="py-12 overflow-hidden">
-        <div class="bg-gradient-to-tr from-slate-100 to-indigo-50 max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 rounded-xl">
+        <div class="bg-gradient-to-tr from-slate-100 to-indigo-50 max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 md:rounded-xl">
             <h1 class="roboto-slab text-center font-bold text-3xl md:text-4xl capitalize">Contact Us</h1>
         </div>
     </header>

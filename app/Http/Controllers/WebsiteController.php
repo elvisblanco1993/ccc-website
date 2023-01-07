@@ -41,14 +41,21 @@ class WebsiteController extends Controller
 
     public function sermonAudio()
     {
-        return view('web.home', [
+        return view('web.sermon-audio', [
             'topLevelMenuItems' => $this->topLevelMenuItems
         ]);
     }
 
     public function about()
     {
-        return view('web.home', [
+        return view('web.about', [
+            'topLevelMenuItems' => $this->topLevelMenuItems
+        ]);
+    }
+
+    public function missionPartners()
+    {
+        return view('web.mission-partners', [
             'topLevelMenuItems' => $this->topLevelMenuItems
         ]);
     }

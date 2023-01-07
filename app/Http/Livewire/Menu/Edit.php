@@ -31,7 +31,7 @@ class Edit extends Component
     public function save()
     {
         if (!$this->topLevel || ($this->topLevel && !$this->is_dropdown)) {
-            $this->validate(['label' => 'required', 'link' => 'required|active_url']);
+            $this->validate(['label' => 'required', 'link' => 'required']);
         } else {
             $this->validate(['label' => 'required']);
         }
