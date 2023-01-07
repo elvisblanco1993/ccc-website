@@ -1,3 +1,5 @@
 <header class="w-full">
-    @livewire('slide.show')
+    @if (\App\Models\Slide::where('is_enabled', 1)->count() > 0)
+        @livewire('slide.show')
+    @endif
 </header>
