@@ -32,7 +32,7 @@
     {{-- Location --}}
     <div class="grid grid-cols-2 gap-12 items-center">
         <div class="col-span-2 md:col-span-1">
-            <h2 class="roboto-slab text-left font-bold text-3xl uppercase">{!! __("Join us every Sunday morning for our workship service.") !!}</h2>
+            <h2 class="roboto-slab text-left font-bold text-3xl uppercase">{!! __("Join us every Sunday morning for our worship service.") !!}</h2>
             <ul class="mt-6 text-lg text-slate-800">
                 <li class="flex items-top space-x-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 flex-none">
