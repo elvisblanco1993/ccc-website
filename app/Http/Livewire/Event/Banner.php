@@ -11,7 +11,7 @@ class Banner extends Component
 
     public function mount()
     {
-        $this->event = Event::whereNotNull('display_alert_form')
+        $this->event = Event::whereNotNull('display_alert_from')
             ->where('display_alert_from', '<', now())
             ->where('display_alert_to', '>', now())
             ->first();
