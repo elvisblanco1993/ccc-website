@@ -4,12 +4,12 @@ Here is a seven-question checklist to determine whether a church you are visitin
 
 1. Does this church preach the true, biblical Gospel of Jesus Christ?
 2. Does this church place the Lord Jesus Christ at the center of everything (worship, ministry?)
-3. Is the Bible the ultimate authority in all matters (The Sufficiency of Scripture; [2 Timothy 3:16-17](1)) pertaining to faith and it’s practice?
+3. Is the Bible the ultimate authority in all matters (The Sufficiency of Scripture; [2 Timothy 3:16-17][1]) pertaining to faith and it’s practice?
 4. Does the pastor or preacher attempt to do biblical exposition (preaching the message of the biblical text) or is he simply speaking from his own opinions or passions?
-5. Is the church elder led? Or if not, is the pastoral leadership qualified according to Scripture ([1 Timothy 3](2); [Titus 1](3))?
+5. Is the church elder led? Or if not, is the pastoral leadership qualified according to Scripture ([1 Timothy 3][2]; [Titus 1][3])?
 Ideally, we recommend that you go to a church with multiple, biblically qualified elders.
-6. Does the church practice biblical church discipline ([Matthew 18](4); [1 Corinthians 5](5)) and membership beginning with believers baptism?
-7. Is the church age-integrated or substantially so? Or, are the youth and children intentionally segregated from their parents and the opportunity to worship and be discipled together as a family ([Deuteronomy 6:2-9](6), [Deuteronomy 29:10-13](7), [Deuteronomy 31:11-13](8); [Joshua 8:35](9); [Ephesians 6:1-4](10))?
+6. Does the church practice biblical church discipline ([Matthew 18][4]; [1 Corinthians 5][5]) and membership beginning with believers baptism?
+7. Is the church age-integrated or substantially so? Or, are the youth and children intentionally segregated from their parents and the opportunity to worship and be discipled together as a family ([Deuteronomy 6:2-9][6], [Deuteronomy 29:10-13][7], [Deuteronomy 31:11-13][8]; [Joshua 8:35][9]; [Ephesians 6:1-4][10])?
 
 **We do not believe that age integration is the most important matter for church life.**
 

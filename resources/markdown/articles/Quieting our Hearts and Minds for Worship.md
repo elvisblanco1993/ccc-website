@@ -11,7 +11,7 @@
 
 2. **Limit media consumption:**
 
-	Most Americans consume 9-11 hours of media a day ([James 1:21](1)). In Preaching to Programmed People: Effective Communication in a Media-Saturated Society , Timothy Turner explains how “TV watching and preaching are diametrically opposed to one another-one is visual, the other is rational; one involves the eyes, the other involves the ears; one creates passive watchers, the other requires active hearers.” After watching TV and going to the movies and surfing the Internet all week long, you come to church and have to sit and listen to a lengthy sermon that requires a great deal of concentration and exertion you aren’t used to. You’re expected to go from being a passive viewer to an aggressive listener literally overnight. Listening demands a great deal of concentration and self-discipline.
+	Most Americans consume 9-11 hours of media a day ([James 1:21][1]). In Preaching to Programmed People: Effective Communication in a Media-Saturated Society , Timothy Turner explains how “TV watching and preaching are diametrically opposed to one another-one is visual, the other is rational; one involves the eyes, the other involves the ears; one creates passive watchers, the other requires active hearers.” After watching TV and going to the movies and surfing the Internet all week long, you come to church and have to sit and listen to a lengthy sermon that requires a great deal of concentration and exertion you aren’t used to. You’re expected to go from being a passive viewer to an aggressive listener literally overnight. Listening demands a great deal of concentration and self-discipline.
 
 3. **Use Saturday evening well:**
 
@@ -41,7 +41,7 @@
 
 4. **Accept there will be times when the Word hurts you:**
 
-	Don’t react against this and shut down, but receive it and try to profit from it as God’s Word is and should be, “sharper than any two-edged sword” ([Hebrews 4:12](2)).
+	Don’t react against this and shut down, but receive it and try to profit from it as God’s Word is and should be, “sharper than any two-edged sword” ([Hebrews 4:12][2]).
 
 5. **Try to find one thing to benefit from:**
 
@@ -63,7 +63,7 @@
 
 4. **Work on your soil:**
 
-	Soil can change from bad to good to very good. We are responsible for preparing the soil of our hearts ([Mark 4:1-20](3)).
+	Soil can change from bad to good to very good. We are responsible for preparing the soil of our hearts ([Mark 4:1-20][3]).
 
 5. **Give feedback:**
 
