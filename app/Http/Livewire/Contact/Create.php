@@ -26,7 +26,7 @@ class Create extends Component
             'message' => $this->message,
         ]);
 
-        Mail::to("info@christcomchurch.org")->send(new SendWebsiteInquiryEmail());
+        Mail::to(config('ccc.internal.email'))->send(new SendWebsiteInquiryEmail());
 
         session()->flash('message', 'We have received your message!');
     }
