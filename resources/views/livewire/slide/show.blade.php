@@ -40,54 +40,54 @@
                 </svg>
             </button>
         </div>
+
+        <script>
+            let autoSlide = setInterval(function(){
+                this.nextSlide(); // start autoslide
+            }, 10000);
+
+            function nextSlide(){
+                let activeSlide = document.querySelector('.slide.z-10.opacity-100');
+                activeSlide.classList.remove('z-10');
+                activeSlide.classList.remove('opacity-100');
+                activeSlide.classList.add('z-0');
+                activeSlide.classList.add('opacity-0');
+
+                let nextSlide = activeSlide.nextElementSibling;
+                if (nextSlide === null) {
+                    nextSlide = document.querySelector('#slider').firstElementChild;
+                }
+                nextSlide.classList.remove('z-0');
+                nextSlide.classList.remove('opacity-0');
+                nextSlide.classList.add('z-10');
+                nextSlide.classList.add('opacity-100');
+            }
+
+            function previousSlide(){
+                let activeSlide = document.querySelector('.slide.z-10.opacity-100');
+                activeSlide.classList.remove('z-10');
+                activeSlide.classList.remove('opacity-100');
+                activeSlide.classList.add('z-0');
+                activeSlide.classList.add('opacity-0');
+
+                let previousSlide = activeSlide.previousElementSibling;
+                if (previousSlide === null) {
+                    previousSlide = document.querySelector('#slider').lastElementChild;
+                }
+                previousSlide.classList.remove('z-0');
+                previousSlide.classList.remove('opacity-0');
+                previousSlide.classList.add('z-10');
+                previousSlide.classList.add('opacity-100');
+            }
+
+            document.getElementById('prevBtn').addEventListener('click', function() {
+                clearInterval(autoSlide); // pause auto slide
+                previousSlide();
+            });
+            document.getElementById('nextBtn').addEventListener('click', function() {
+                clearInterval(autoSlide); // pause auto slide
+                nextSlide();
+            });
+        </script>
     @endif
-
-    <script>
-        let autoSlide = setInterval(function(){
-            this.nextSlide(); // start autoslide
-        }, 10000);
-
-        function nextSlide(){
-            let activeSlide = document.querySelector('.slide.z-10.opacity-100');
-            activeSlide.classList.remove('z-10');
-            activeSlide.classList.remove('opacity-100');
-            activeSlide.classList.add('z-0');
-            activeSlide.classList.add('opacity-0');
-
-            let nextSlide = activeSlide.nextElementSibling;
-            if (nextSlide === null) {
-                nextSlide = document.querySelector('#slider').firstElementChild;
-            }
-            nextSlide.classList.remove('z-0');
-            nextSlide.classList.remove('opacity-0');
-            nextSlide.classList.add('z-10');
-            nextSlide.classList.add('opacity-100');
-        }
-
-        function previousSlide(){
-            let activeSlide = document.querySelector('.slide.z-10.opacity-100');
-            activeSlide.classList.remove('z-10');
-            activeSlide.classList.remove('opacity-100');
-            activeSlide.classList.add('z-0');
-            activeSlide.classList.add('opacity-0');
-
-            let previousSlide = activeSlide.previousElementSibling;
-            if (previousSlide === null) {
-                previousSlide = document.querySelector('#slider').lastElementChild;
-            }
-            previousSlide.classList.remove('z-0');
-            previousSlide.classList.remove('opacity-0');
-            previousSlide.classList.add('z-10');
-            previousSlide.classList.add('opacity-100');
-        }
-
-        document.getElementById('prevBtn').addEventListener('click', function() {
-            clearInterval(autoSlide); // pause auto slide
-            previousSlide();
-        });
-        document.getElementById('nextBtn').addEventListener('click', function() {
-            clearInterval(autoSlide); // pause auto slide
-            nextSlide();
-        });
-    </script>
 </div>
