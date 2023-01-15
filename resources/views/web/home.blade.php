@@ -21,7 +21,7 @@
     {{-- Pastor message/video --}}
     <div>
         <h2 class="roboto-slab text-left md:text-center font-bold text-3xl md:text-3xl uppercase">{{ __("a welcome message from pastor bernie diaz") }}</h2>
-        <video controls class="mt-12 w-full aspect-video rounded-xl">
+        <video controls class="mt-12 w-full aspect-video rounded-xl" poster="{{ asset('ccc-intro.png') }}">
             <source src="{{ asset('ccc-intro.mp4') }}" type="video/mp4"/>
             <source src="{{ asset('ccc-intro.webm') }}" type="video/webm"/>
         </video>
