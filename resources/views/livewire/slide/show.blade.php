@@ -11,7 +11,7 @@
                         <h1 class="text-2xl md:text-5xl lg:text-6xl font-black text-[#fefefc]" style="text-shadow: 1px 1px #0f1955">{{ $slide->title }}</h1>
 
                         @if ($slide->content)
-                            <p class="hidden md:block mt-6 text-xl md:text-2xl font-medium text-[#fefefc]" style="text-shadow: 1px 1px #0f1955">{{ $slide->content }}</p>
+                            <p class="hidden md:block mt-6 text-xl md:text-2xl lg:text-3xl font-medium text-[#fefefc]" style="text-shadow: 1px 1px #0f1955">{{ $slide->content }}</p>
                         @endif
 
                         @if ($slide->btn_label && $slide->btn_link)
