@@ -8,7 +8,7 @@
             ]) style="background-image: url({{ asset($slide->bg_image) }})">
                 <div class="h-full flex items-center justify-center max-w-7xl mx-auto    text-left px-4 sm:px-6 lg:px-8">
                     <div class="w-full text-left">
-                        <h1 class="text-2xl md:text-5xl lg:text-6xl font-black text-[#fefefc]" style="text-shadow: 1px 1px #0f1955">{{ $slide->title }}</h1>
+                        <h1 class="text-2xl md:text-5xl lg:text-6xl font-black text-[#fefefc] text-center" style="text-shadow: 1px 1px #0f1955">{{ $slide->title }}</h1>
 
                         @if ($slide->content)
                             <p class="hidden md:block mt-6 text-xl font-medium text-[#fefefc]" style="text-shadow: 1px 1px #0f1955">{{ $slide->content }}</p>
