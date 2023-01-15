@@ -8,10 +8,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {{-- Heartbeat of Miami --}}
         <div class="grid grid-cols-6 gap-4 items-center">
-            <div class="col-span-6 sm:col-span-2">
+            <div class="col-span-6 md:col-span-2">
                 <img src="{{ asset('heartbeat-of-miami.png') }}" alt="" class="border rounded-lg shadow">
             </div>
-            <div class="col-span-6 sm:col-span-4 py-4">
+            <div class="col-span-6 md:col-span-4 py-4">
                 <a href="https://heartbeatofmiami.org/" target="_blank" class="underline hover:text-ccc">
                     <h2 class="roboto-slab text-2xl font-bold">Heartbeat of Miami</h2>
                 </a>
@@ -22,10 +22,10 @@
 
         {{-- Rock of Ages --}}
         <div class="mt-12 grid grid-cols-6 gap-4 items-center">
-            <div class="col-span-6 sm:col-span-2 bg-black h-full flex items-center rounded-lg shadow p-2">
+            <div class="col-span-6 md:col-span-2 bg-black h-full flex items-center rounded-lg shadow p-2">
                 <img src="{{ asset('rock-of-ages-ministry.png') }}" alt="">
             </div>
-            <div class="col-span-6 sm:col-span-4 py-4">
+            <div class="col-span-6 md:col-span-4 py-4">
                 <a href="https://roapm.org/" target="_blank" class="underline hover:text-ccc">
                     <h2 class="roboto-slab text-2xl font-bold">Rock of Ages Ministries</h2>
                 </a>
