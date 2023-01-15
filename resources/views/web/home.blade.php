@@ -21,11 +21,11 @@
     {{-- Pastor message/video --}}
     <div>
         <h2 class="roboto-slab text-left md:text-center font-bold text-3xl md:text-3xl uppercase">{{ __("a welcome message from pastor bernie diaz") }}</h2>
-        <video src="{{ asset('ccc-intro.webm') }}"
-            type='video/webm; codecs="vp9, vorbis"'
-            controls
-            class="mt-12 w-full aspect-video rounded-xl"
-        ></video>
+        <video controls class="mt-12 w-full aspect-video rounded-xl">
+            <source src="{{ asset('ccc-intro.mp4') }}" type="video/mp4"/>
+            <source src="{{ asset('ccc-intro.ogv') }}" type="video/ogg"/>
+            <source src="{{ asset('ccc-intro.webm') }}" type="video/webm"/>
+        </video>
     </div>
     <div class="py-12 md:py-24"></div>
     {{-- Location --}}
