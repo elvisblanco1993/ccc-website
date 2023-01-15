@@ -32,7 +32,7 @@
                         </div>
                         <div class="">
                             <p class="text-lg font-bold">Location</p>
-                            <a href="https://www.google.com/maps/search/?api=1&query={{ urlencode($event->address) }}" target="_blank" class="text-sm underline hover:text-indigo-600">{{ $event->address }}</a>
+                            <a href="https://www.google.com/maps/search/?api=1&query={{ urlencode($event->address) }}" target="_blank" class="text-sm underline hover:text-ccc">{{ $event->address }}</a>
                         </div>
                     </div>
                 </div>

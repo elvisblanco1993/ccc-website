@@ -15,7 +15,7 @@
                 @if ($item->is_top_level && $item->is_dropdown)
                     <x-jet-dropdown>
                         <x-slot name="trigger">
-                            <button type="button" class="flex-none hover:text-indigo-600 transition-all uppercase">
+                            <button type="button" class="flex-none hover:text-ccc transition-all uppercase">
                                 {{ $item->btn_label }}
                             </button>
                         </x-slot>
@@ -31,7 +31,7 @@
                         </x-slot>
                     </x-jet-dropdown>
                 @else
-                    <a href="{{ $item->btn_link }}" class="flex-none hover:text-indigo-600 transition-all">{{ $item->btn_label }}</a>
+                    <a href="{{ $item->btn_link }}" class="flex-none hover:text-ccc transition-all">{{ $item->btn_label }}</a>
                 @endif
             @empty
             @endforelse

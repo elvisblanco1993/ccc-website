@@ -12,7 +12,7 @@
                 <img src="{{ asset('heartbeat-of-miami.png') }}" alt="" class="border rounded-lg shadow">
             </div>
             <div class="col-span-6 sm:col-span-4 py-4">
-                <a href="https://heartbeatofmiami.org/" target="_blank" class="underline hover:text-indigo-600">
+                <a href="https://heartbeatofmiami.org/" target="_blank" class="underline hover:text-ccc">
                     <h2 class="roboto-slab text-2xl font-bold">Heartbeat of Miami</h2>
                 </a>
                 <p class="mt-2">Heartbeat of Miami is a bold and winsome call to the Christian community to open 3 to 5 pregnancy help centers in the neediest neighborhoods of Miami over the next two years. These centers will be equipped with ultrasound and staffed by nurses, trained peer counselors, and volunteers from the Christian community. When established they will save thousands of women every year from the violence and agony of abortion- in direct competition to the nearly 30+ abortion facilities operating in Miami. They are targeting and exploiting women who are anxious and unprepared for pregnancy.</p>
@@ -26,7 +26,7 @@
                 <img src="{{ asset('rock-of-ages-ministry.png') }}" alt="">
             </div>
             <div class="col-span-6 sm:col-span-4 py-4">
-                <a href="https://roapm.org/" target="_blank" class="underline hover:text-indigo-600">
+                <a href="https://roapm.org/" target="_blank" class="underline hover:text-ccc">
                     <h2 class="roboto-slab text-2xl font-bold">Rock of Ages Ministries</h2>
                 </a>
                 <p class="mt-2">Rock of Ages Ministries was established in 1978 and is a worldwide outreach ministering on the continents of Europe, Asia, Africa, North and South America. We offer ministry outreach to prisons, schools and the military through our Publication Department, Revivals, Chaplaincy Program, Discipleship Institute, and our College of Biblical Studies. For further information on any of these ministries, please go to the Ministries menu.</p>
