@@ -36,7 +36,7 @@
         <section class="max-w-7xl mx-auto p-4 sm:p-0">
             <object data="{{ asset($plan->url) }}" type="application/pdf" class="w-full" height="1200">
                 <p>This browser does not support PDFs. Please, download the PDF to view it:</p>
-                <a href="{{ asset($plan->url) }}" target="_blank" class="inline-block px-5 py-2 bg-ccc rounded-md text-white flex-nowrap">Download Reading Plan</a>
+                <a href="{{ asset($plan->url) }}" target="_blank" class="mt-6 inline-block px-5 py-2 bg-ccc rounded-md text-white flex-nowrap">Download Reading Plan</a>
             </object>
         </section>
     @endif
