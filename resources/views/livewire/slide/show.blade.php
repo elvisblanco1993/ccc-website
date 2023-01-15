@@ -7,7 +7,7 @@
                 "absolute w-full aspect-[8/6] lg:aspect-[16/9] xl:aspect-[16/7] bg-no-repeat bg-cover bg-center ease-in-out transition-delay-75 duration-1000 transition-all"
             ]) style="background-image: url({{ asset($slide->bg_image) }})">
                 <div class="h-full flex items-center justify-center max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-                    <div class="w-full text-left">
+                    <div class="w-full">
                         <h1 class="text-2xl md:text-5xl lg:text-6xl font-black text-[#fefefc]" style="text-shadow: 1px 1px #0f1955">{{ $slide->title }}</h1>
 
                         @if ($slide->content)
