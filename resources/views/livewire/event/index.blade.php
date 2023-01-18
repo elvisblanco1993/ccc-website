@@ -29,7 +29,8 @@
                                     {{ Carbon\Carbon::parse($event->date)->format('M d, Y \a\t H:i a') }}
                                 </th>
                                 <td class="py-4 px-6">
-                                    {{ $event->name }}
+                                    <p>{{ $event->name }}</p>
+                                    <p class="text-sm">{{ route('event.show', ['event' => $event->id]) }}</p>
                                 </td>
                                 <td class="py-4 px-6">
                                     @if (Carbon\Carbon::now()->gte($event->display_alert_from) && Carbon\Carbon::now()->lte($event->display_alert_to))
