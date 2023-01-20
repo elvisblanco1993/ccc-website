@@ -53,7 +53,7 @@
             <h2 class="roboto-slab text-3xl font-bold">Meet Our Leaders</h2>
 
             <div class="mt-6 grid grid-cols-3 gap-8">
-                <div class="mt-12 col-span-3 sm:col-span-1">
+                <div class="md:mt-12 col-span-3 sm:col-span-1">
                     <img src="{{ asset('CCC_PORTRAITS-4.jpg') }}" alt="" class="rounded-lg shadow-lg">
                     <h4 class="mt-4 text-lg font-bold">Jorge Quiñones</h4>
                     <p class="text-slate-700">Elder, Worship Coordinator</p>
@@ -65,7 +65,7 @@
                     <p class="text-slate-700">Pastor, Elder</p>
                     <a class="underline text-ccc text-sm" href="mailto:info@christcomchurch.org">info@christcomchurch.org</a>
                 </div>
-                <div class="mt-12 col-span-3 sm:col-span-1">
+                <div class="md:mt-12 col-span-3 sm:col-span-1">
                     <img src="{{ asset('robert-pimentel.jpeg') }}" alt="" class="rounded-lg shadow-lg">
                     <h4 class="mt-4 text-lg font-bold">Robert Pimentel</h4>
                     <p class="text-slate-700">Deacon</p>
