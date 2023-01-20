@@ -60,5 +60,5 @@
 <div class="py-12 md:py-24"></div>
 
 {{-- End of page content --}}
-@include('web.partials.cta')
+{{-- @include('web.partials.cta') --}}
 @endsection

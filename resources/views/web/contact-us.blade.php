@@ -55,5 +55,5 @@
         </div>
     </main>
     <div class="py-6"></div>
-@include('web.partials.cta')
+{{-- @include('web.partials.cta') --}}
 @endsection
