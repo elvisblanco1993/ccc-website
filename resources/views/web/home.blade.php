@@ -12,7 +12,7 @@
             <p class="mt-4 text-lg text-slate-700">{{ __("Hear Biblical preaching and teaching, God glorifying worship, and participate in loving fellowship for the purpose of making us into Disciples of Jesus Christ for the Glory of God.") }}</p>
         </div>
         <div class="col-span-2 md:col-span-1">
-            <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80"
+            <img src="{{ asset('raised-hand.webp') }}"
                 alt=""
                 class="w-full aspect-video md:aspect-[10/8] object-cover object-center rounded-2xl shadow">
         </div>
