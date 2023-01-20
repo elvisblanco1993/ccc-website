@@ -65,7 +65,7 @@
                             @if ($item->is_top_level && $item->is_dropdown)
                                 <div class="block px-4 py-2">
                                     <p @class([
-                                        'block text-xs text-ccc uppercase',
+                                        'block text-sm font-medium text-ccc uppercase',
                                         'pt-2 border-t border-t-slate-100 -mx-4 px-4' => !$loop->first
                                     ])>{{ $item->btn_label }}</p>
                                     @if (\App\Models\Menu::where('parent_id', $item->id)->exists())
