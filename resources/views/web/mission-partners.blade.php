@@ -34,6 +34,20 @@
             </div>
         </div>
 
+        {{-- First Priority --}}
+        <div class="mt-12 grid grid-cols-6 gap-4 items-center">
+            <div class="col-span-6 md:col-span-2">
+                <img src="{{ asset('heartbeat-of-miami.png') }}" alt="First Priority image" class="border rounded-lg shadow">
+            </div>
+            <div class="col-span-6 md:col-span-4 py-4">
+                <a href="https://heartbeatofmiami.org/" target="_blank" class="underline hover:text-ccc">
+                    <h2 class="roboto-slab text-2xl font-bold">First Priority</h2>
+                </a>
+                <p class="mt-2">Heartbeat of Miami is a bold and winsome call to the Christian community to open 3 to 5 pregnancy help centers in the neediest neighborhoods of Miami over the next two years. These centers will be equipped with ultrasound and staffed by nurses, trained peer counselors, and volunteers from the Christian community. When established they will save thousands of women every year from the violence and agony of abortion- in direct competition to the nearly 30+ abortion facilities operating in Miami. They are targeting and exploiting women who are anxious and unprepared for pregnancy.</p>
+                <p class="mt-2">In response to God's call to " rescue the weak and the needy" and "deliver them from the hand of the wicked" (Psalm 82:3), Heartbeat of Miami will be a practical way to save lives in a life changing way for the glory of God and the advancement of the Gospel. To succeed it will take hard work, strategic planning, generous giving and prayer from Christians and Churches in and around Miami. May God give you a burning heart to join in this Great Work.</p>
+            </div>
+        </div>
+
         {{-- Rock of Ages --}}
         <div class="mt-12 grid grid-cols-6 gap-4 items-center">
             <div class="col-span-6 md:col-span-2 bg-black h-full flex items-center rounded-lg shadow p-2">
