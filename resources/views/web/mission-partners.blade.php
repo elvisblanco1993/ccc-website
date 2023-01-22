@@ -6,10 +6,24 @@
         </div>
     </header>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {{-- Love Life --}}
+        <div class="mt-12 grid grid-cols-6 gap-4 items-center">
+            <div class="col-span-6 md:col-span-2 bg-white h-full flex items-center rounded-lg shadow p-2">
+                <img src="{{ asset('love-life.png') }}" alt="Love life image">
+            </div>
+            <div class="col-span-6 md:col-span-4 py-4">
+                <a href="/the-house-of-refuge-statement" target="_blank" class="underline hover:text-ccc">
+                    <h2 class="roboto-slab text-2xl font-bold">Love Life</h2>
+                </a>
+                <p class="mt-2">Love Life is a nationwide mission and ministry uniting and mobilizing the church to create a culture of love and life that will result in an end to abortion and the orphan crisis.</p>
+                <p class="mt-2">Pastor Bernie Diaz serves as a missionary for the South Florida chapter of Love Life and our church serves in the city of Pembroke Pines with a sidewalk and counseling ministry in partnership with Love Life at an abortion center. For more information, contact us at <a href="mailto:info@christcomchurch.org">info@christcomchurch.org</a></p>
+            </div>
+        </div>
+
         {{-- Heartbeat of Miami --}}
-        <div class="grid grid-cols-6 gap-4 items-center">
+        <div class="mt-12 grid grid-cols-6 gap-4 items-center">
             <div class="col-span-6 md:col-span-2">
-                <img src="{{ asset('heartbeat-of-miami.png') }}" alt="" class="border rounded-lg shadow">
+                <img src="{{ asset('heartbeat-of-miami.png') }}" alt="heartbeat of miami image" class="border rounded-lg shadow">
             </div>
             <div class="col-span-6 md:col-span-4 py-4">
                 <a href="https://heartbeatofmiami.org/" target="_blank" class="underline hover:text-ccc">
@@ -23,7 +37,7 @@
         {{-- Rock of Ages --}}
         <div class="mt-12 grid grid-cols-6 gap-4 items-center">
             <div class="col-span-6 md:col-span-2 bg-black h-full flex items-center rounded-lg shadow p-2">
-                <img src="{{ asset('rock-of-ages-ministry.png') }}" alt="">
+                <img src="{{ asset('rock-of-ages-ministry.png') }}" alt="rock of ages ministries image">
             </div>
             <div class="col-span-6 md:col-span-4 py-4">
                 <a href="https://roapm.org/" target="_blank" class="underline hover:text-ccc">

@@ -42,6 +42,17 @@
             alt=""
             class="w-full aspect-video md:aspect-[10/8] object-cover object-center rounded-2xl shadow">
     </div>
+
+    {{-- Group 4 --}}
+    <div class="col-span-2 md:col-span-1">
+        <img src="{{ asset('freely-73933-L.jpg') }}"
+            alt=""
+            class="w-full aspect-video md:aspect-[10/8] object-cover object-center rounded-2xl shadow">
+    </div>
+    <div class="col-span-2 md:col-span-1">
+        <h2 class="roboto-slab md:text-left font-bold text-3xl capitalize">{!! __("Prayer Meeting") !!}</h2>
+        <p class="mt-4 text-lg text-slate-800">{{ __("Our church members and regular attendees are invited and encouraged to join us every Thursday evening from 8-9 PM, live and online to seek God’s face and his throne of grace with petitions for our church, community, country and beyond. For information on how to receive the login in order to join the meeting, contact us at") }} <a target="_blank" class="underline" href="mailto:info@christcomchurch.org">info@christcomchurch.org</a></p>
+    </div>
 </section>
 <div class="py-12"></div>
 
