@@ -40,7 +40,7 @@
                 <img src="{{ asset('first-priority.svg') }}" alt="First Priority image" class="w-full">
             </div>
             <div class="col-span-6 md:col-span-4 py-4">
-                <a href="https://heartbeatofmiami.org/" target="_blank" class="underline hover:text-ccc">
+                <a href="https://firstpriority.cc/" target="_blank" class="underline hover:text-ccc">
                     <h2 class="roboto-slab text-2xl font-bold">First Priority</h2>
                 </a>
                 <p class="mt-2">First Priority exists to share the Hope of the Gospel with every student, on every public school campus. They equip students with the resources to effectively share the Hope of Christ with their fellow students and to create a safe place on campus where any and everyone is loved and welcome.</p>
