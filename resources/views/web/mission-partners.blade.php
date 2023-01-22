@@ -12,7 +12,7 @@
                 <img src="{{ asset('love-life.png') }}" alt="Love life image">
             </div>
             <div class="col-span-6 md:col-span-4 py-4">
-                <a href="/the-house-of-refuge-statement" target="_blank" class="underline hover:text-ccc">
+                <a href="/the-house-of-refuge-statement" class="underline hover:text-ccc">
                     <h2 class="roboto-slab text-2xl font-bold">Love Life</h2>
                 </a>
                 <p class="mt-2">Love Life is a nationwide mission and ministry uniting and mobilizing the church to create a culture of love and life that will result in an end to abortion and the orphan crisis.</p>
