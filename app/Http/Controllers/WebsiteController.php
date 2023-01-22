@@ -6,7 +6,6 @@ use App\Models\Article;
 use App\Models\Event;
 use App\Models\Menu;
 use App\Models\ReadingPlan;
-use Illuminate\Http\Request;
 
 class WebsiteController extends Controller
 {
