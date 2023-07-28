@@ -33,7 +33,7 @@
     </header>
 
     @if ($plan)
-        <section class="max-w-7xl mx-auto p-4 sm:p-0">
+        <section class="max-w-7xl mx-auto p-4 mb-12 sm:p-0">
             <embed src="{{ asset($plan->url) }}" type="application/pdf" class="w-full" width="100%" height="700px"/>
         </section>
     @endif
