@@ -34,6 +34,7 @@
 
     @if ($plan)
         <section class="max-w-7xl mx-auto p-4 mb-12 sm:p-0">
+            <a href="{{ asset($plan->url) }}" class="block sm:hidden px-4 py-2 bg-ccc text-white text-center">Download the Bible Reading Plan</a>
             <embed src="{{ asset($plan->url) }}" type="application/pdf" class="w-full" width="100%" height="700px"/>
         </section>
     @endif
